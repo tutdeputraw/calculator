@@ -54,26 +54,26 @@
 
             <Button
                 style="@style/customButton"
-                android:onClick="clickAc"
+                android:onClick="clearOnClick"
                 android:text="AC"
                 android:textColor="@color/cyan" />
 
             <Button
                 style="@style/customButton"
                 android:text="DEL"
-                android:onClick="clickDel"
+                android:onClick="deleteOnClick"
                 android:textColor="@color/cyan" />
 
             <Button
                 style="@style/customButton"
-                android:text="+/-"
-                android:onClick="clickPlusMinus"
+                android:text="()"
+                android:onClick="bracketOnClick"
                 android:textColor="@color/cyan" />
 
             <Button
                 style="@style/customButton"
                 android:text="/"
-                android:onClick="clickDivision"
+                android:onClick="divisionOnClick"
                 android:textColor="@color/cyan" />
         </LinearLayout>
 
@@ -86,25 +86,25 @@
             <Button
                 style="@style/customButton"
                 android:text="7"
-                android:onClick="click7"
+                android:onClick="sevenOnClick"
                 android:textColor="@color/white" />
 
             <Button
                 style="@style/customButton"
                 android:text="8"
-                android:onClick="click8"
+                android:onClick="eightOnClick"
                 android:textColor="@color/white" />
 
             <Button
                 style="@style/customButton"
                 android:text="9"
-                android:onClick="click9"
+                android:onClick="nineOnClick"
                 android:textColor="@color/white" />
 
             <Button
                 style="@style/customButton"
                 android:text="x"
-                android:onClick="clickX"
+                android:onClick="timesOnClick"
                 android:textColor="@color/cyan" />
         </LinearLayout>
 
@@ -117,25 +117,25 @@
             <Button
                 style="@style/customButton"
                 android:text="4"
-                android:onClick="click4"
+                android:onClick="fourOnClick"
                 android:textColor="@color/white" />
 
             <Button
                 style="@style/customButton"
                 android:text="5"
-                android:onClick="click5"
+                android:onClick="fiveOnClick"
                 android:textColor="@color/white" />
 
             <Button
                 style="@style/customButton"
                 android:text="6"
-                android:onClick="click6"
+                android:onClick="sixOnClick"
                 android:textColor="@color/white" />
 
             <Button
                 style="@style/customButton"
                 android:text="-"
-                android:onClick="clickMinus"
+                android:onClick="minusOnClick"
                 android:textColor="@color/cyan" />
         </LinearLayout>
 
@@ -148,25 +148,25 @@
             <Button
                 style="@style/customButton"
                 android:text="1"
-                android:onClick="click1"
+                android:onClick="oneOnClick"
                 android:textColor="@color/white" />
 
             <Button
                 style="@style/customButton"
                 android:text="2"
-                android:onClick="click2"
+                android:onClick="twoOnClick"
                 android:textColor="@color/white" />
 
             <Button
                 style="@style/customButton"
                 android:text="3"
-                android:onClick="click3"
+                android:onClick="threeOnClick"
                 android:textColor="@color/white" />
 
             <Button
                 style="@style/customButton"
                 android:text="+"
-                android:onClick="clickPlus"
+                android:onClick="plusOnClick"
                 android:textColor="@color/cyan" />
         </LinearLayout>
 
@@ -179,25 +179,25 @@
             <Button
                 style="@style/customButton"
                 android:text="%"
-                android:onClick="clickPercent"
+                android:onClick="percentOnClick"
                 android:textColor="@color/white" />
 
             <Button
                 style="@style/customButton"
                 android:text="0"
-                android:onClick="click0"
+                android:onClick="zeroOnClick"
                 android:textColor="@color/white" />
 
             <Button
                 style="@style/customButton"
                 android:text="."
-                android:onClick="clickDot"
+                android:onClick="dotOnClick"
                 android:textColor="@color/white" />
 
             <Button
                 style="@style/customButton"
                 android:text="="
-                android:onClick="clickCalculate"
+                android:onClick="equalsOnClick"
                 android:textColor="@color/cyan" />
         </LinearLayout>
     </LinearLayout>
