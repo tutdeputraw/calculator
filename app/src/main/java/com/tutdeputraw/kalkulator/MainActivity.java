@@ -14,8 +14,8 @@ import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
 
 public class MainActivity extends AppCompatActivity {
-    private TextView workingsTV;
-    private TextView resultTV;
+    private TextView tvWorkings;
+    private TextView tvResults;
     private String workings = "";
     private String formula = "";
     private String tempFormula = "";
@@ -30,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initTextViews() {
-        workingsTV = findViewById(R.id.tv_number);
-        resultTV = findViewById(R.id.tv_result);
+        tvWorkings = findViewById(R.id.tvNumber);
+        tvResults = findViewById(R.id.tvResult);
     }
 
     private void setWorkings(String givenValue) {
         workings = workings + givenValue;
-        workingsTV.setText(workings);
+        tvWorkings.setText(workings);
     }
 
     public void equalsOnClick(View view) {
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (result != null)
-            resultTV.setText(String.valueOf(result.doubleValue()));
+            tvResults.setText(String.valueOf(result.doubleValue()));
     }
 
     private void checkForPowerOf() {
@@ -100,9 +100,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clearOnClick(View view) {
-        workingsTV.setText("");
+        tvWorkings.setText("");
         workings = "";
-        resultTV.setText("");
+        tvResults.setText("");
         leftBracket = true;
     }
 
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
             newValue += workings.charAt(i);
         }
         workings = newValue;
-        workingsTV.setText(workings);
+        tvWorkings.setText(workings);
     }
 
     public void bracketOnClick(View view) {
@@ -155,7 +155,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void oneOnClick(View view) {
         setWorkings("1");
-        System.out.println("hai");
     }
 
     public void twoOnClick(View view) {
