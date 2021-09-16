@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,8 +11,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_marginEnd="25dp"
         android:layout_marginRight="25dp"
+        android:layout_weight="3"
         android:orientation="vertical">
 
         <TextView
@@ -25,7 +25,8 @@
             android:gravity="bottom|right"
             android:text=""
             android:textColor="@color/white"
-            android:textSize="36sp" />
+            android:textSize="36sp"
+            tools:ignore="NestedWeights,RtlHardcoded" />
 
         <TextView
             android:id="@+id/tvResult"
@@ -37,7 +38,8 @@
             android:gravity="top|right"
             android:text=""
             android:textColor="@color/white"
-            android:textSize="28sp" />
+            android:textSize="28sp"
+            tools:ignore="RtlHardcoded" />
     </LinearLayout>
 
     <LinearLayout
@@ -50,31 +52,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="5"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:ignore="NestedWeights">
 
             <Button
                 style="@style/customButton"
                 android:onClick="clearOnClick"
-                android:text="AC"
-                android:textColor="@color/cyan" />
+                android:text="@string/clear"
+                android:textColor="@color/cyan"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 style="@style/customButton"
-                android:text="DEL"
                 android:onClick="deleteOnClick"
-                android:textColor="@color/cyan" />
+                android:text="@string/delete"
+                android:textColor="@color/cyan"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 style="@style/customButton"
-                android:text="()"
                 android:onClick="bracketOnClick"
-                android:textColor="@color/cyan" />
+                android:text="@string/bracket"
+                android:textColor="@color/cyan"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 style="@style/customButton"
-                android:text="/"
                 android:onClick="divisionOnClick"
-                android:textColor="@color/cyan" />
+                android:text="@string/division"
+                android:textColor="@color/cyan"
+                tools:ignore="UsingOnClickInXml" />
         </LinearLayout>
 
         <LinearLayout
@@ -85,27 +92,31 @@
 
             <Button
                 style="@style/customButton"
-                android:text="7"
                 android:onClick="sevenOnClick"
-                android:textColor="@color/white" />
+                android:text="@string/seven"
+                android:textColor="@color/white"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 style="@style/customButton"
-                android:text="8"
                 android:onClick="eightOnClick"
-                android:textColor="@color/white" />
+                android:text="@string/eight"
+                android:textColor="@color/white"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 style="@style/customButton"
-                android:text="9"
                 android:onClick="nineOnClick"
-                android:textColor="@color/white" />
+                android:text="@string/nine"
+                android:textColor="@color/white"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 style="@style/customButton"
-                android:text="x"
                 android:onClick="timesOnClick"
-                android:textColor="@color/cyan" />
+                android:text="@string/multiplication"
+                android:textColor="@color/cyan"
+                tools:ignore="UsingOnClickInXml" />
         </LinearLayout>
 
         <LinearLayout
@@ -116,27 +127,31 @@
 
             <Button
                 style="@style/customButton"
-                android:text="4"
                 android:onClick="fourOnClick"
-                android:textColor="@color/white" />
+                android:text="@string/four"
+                android:textColor="@color/white"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 style="@style/customButton"
-                android:text="5"
                 android:onClick="fiveOnClick"
-                android:textColor="@color/white" />
+                android:text="@string/five"
+                android:textColor="@color/white"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 style="@style/customButton"
-                android:text="6"
                 android:onClick="sixOnClick"
-                android:textColor="@color/white" />
+                android:text="@string/six"
+                android:textColor="@color/white"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 style="@style/customButton"
-                android:text="-"
                 android:onClick="minusOnClick"
-                android:textColor="@color/cyan" />
+                android:text="@string/subtraction"
+                android:textColor="@color/cyan"
+                tools:ignore="UsingOnClickInXml" />
         </LinearLayout>
 
         <LinearLayout
@@ -147,27 +162,31 @@
 
             <Button
                 style="@style/customButton"
-                android:text="1"
                 android:onClick="oneOnClick"
-                android:textColor="@color/white" />
+                android:text="@string/one"
+                android:textColor="@color/white"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 style="@style/customButton"
-                android:text="2"
                 android:onClick="twoOnClick"
-                android:textColor="@color/white" />
+                android:text="@string/two"
+                android:textColor="@color/white"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 style="@style/customButton"
-                android:text="3"
                 android:onClick="threeOnClick"
-                android:textColor="@color/white" />
+                android:text="@string/three"
+                android:textColor="@color/white"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 style="@style/customButton"
-                android:text="+"
                 android:onClick="plusOnClick"
-                android:textColor="@color/cyan" />
+                android:text="@string/addition"
+                android:textColor="@color/cyan"
+                tools:ignore="UsingOnClickInXml" />
         </LinearLayout>
 
         <LinearLayout
@@ -178,29 +197,31 @@
 
             <Button
                 style="@style/customButton"
-                android:text="%"
                 android:onClick="percentOnClick"
-                android:textColor="@color/white" />
+                android:text="@string/modulus"
+                android:textColor="@color/white"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 style="@style/customButton"
-                android:text="0"
                 android:onClick="zeroOnClick"
-                android:textColor="@color/white" />
+                android:text="@string/zero"
+                android:textColor="@color/white"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 style="@style/customButton"
-                android:text="."
                 android:onClick="dotOnClick"
-                android:textColor="@color/white" />
+                android:text="@string/dot"
+                android:textColor="@color/white"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 style="@style/customButton"
-                android:text="="
                 android:onClick="equalsOnClick"
-                android:textColor="@color/cyan" />
+                android:text="@string/equation"
+                android:textColor="@color/cyan"
+                tools:ignore="UsingOnClickInXml" />
         </LinearLayout>
     </LinearLayout>
-
-
 </LinearLayout>

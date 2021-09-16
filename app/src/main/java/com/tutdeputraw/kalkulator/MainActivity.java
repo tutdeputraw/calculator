@@ -93,10 +93,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean isNumeric(char c) {
-        if ((c <= '9' && c >= '0') || c == '.')
-            return true;
-
-        return false;
+        return (c <= '9' && c >= '0') || c == '.';
     }
 
     public void clearOnClick(View view) {
@@ -107,17 +104,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void deleteOnClick(View view) {
-        String newValue = "";
+        StringBuilder newValue = new StringBuilder();
         for (int i = 0; i < workings.length() - 1; i++) {
-            newValue += workings.charAt(i);
+            newValue.append(workings.charAt(i));
         }
-        workings = newValue;
+        workings = newValue.toString();
         tvWorkings.setText(workings);
     }
 
     public void bracketOnClick(View view) {
         if (leftBracket) {
-            setWorkings("(");
+            setWorkings("(-");
             leftBracket = false;
         } else {
             setWorkings(")");
