@@ -25,7 +25,7 @@
             android:gravity="bottom|right"
             android:text=""
             android:textColor="@color/white"
-            android:textSize="36sp"
+            android:textSize="48sp"
             tools:ignore="NestedWeights,RtlHardcoded" />
 
         <TextView
@@ -38,7 +38,7 @@
             android:gravity="top|right"
             android:text=""
             android:textColor="@color/white"
-            android:textSize="28sp"
+            android:textSize="36sp"
             tools:ignore="RtlHardcoded" />
     </LinearLayout>
 
